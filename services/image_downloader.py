@@ -8,7 +8,7 @@ import psycopg2
 import pandas as pd
 from datetime import datetime
 from dotenv import load_dotenv
-from simple_image_download import simple_image_download as simp
+from simple_image_download.simple_image_download import Downloader as simp
 
 load_dotenv()
 
@@ -56,7 +56,7 @@ def download_and_upload_author_images():
         return {"status": "no_authors"}
 
     # ✅ Download images
-    downloader = simp.simple_image_download()
+    downloader = simp()
     for author in authors:
         downloader.download(author, 5)
 
