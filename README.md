@@ -1,4 +1,4 @@
-# 🧠 MCP Server (Model Control Protocol)
+# 🧠 MCP Server(Model Control Protocol)
 
 A modular FastAPI backend designed for controlling and automating the lifecycle of quote generation, image handling, video metadata management, and structured content distribution — powered by PostgreSQL and modern Python tooling.
 
